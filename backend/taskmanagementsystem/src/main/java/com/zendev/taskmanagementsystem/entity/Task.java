@@ -24,17 +24,17 @@ public class Task {
 
     @ManyToOne
     @JoinColumn(name = "assigned_to")
-    private CustomUser assignedTo; // Keep only one instance of this field
+    private CustomUser assignedTo;
 
     @ManyToOne
-    @JoinColumn(name = "project_id") // Reference to the Project entity
+    @JoinColumn(name = "project_id")
     private Project project;
 
     @Column(name = "due_date")
-    @Temporal(TemporalType.TIMESTAMP) // Store as a timestamp
+    @Temporal(TemporalType.TIMESTAMP)
     private Date dueDate;
 
-    // Getters and setters (Lombok's @Data should generate these automatically)
+    // Getters and setters
     public Integer getId() {
         return id;
     }

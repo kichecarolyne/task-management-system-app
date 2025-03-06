@@ -20,10 +20,10 @@ public class UserManagementController {
     private CustomUserManagementService usersManagementService;
 
     @Autowired
-    private TaskManagementService taskManagementService;  // Task management service
+    private TaskManagementService taskManagementService;
 
     @Autowired
-    private ProjectManagementService projectManagementService;  // Project management service
+    private ProjectManagementService projectManagementService;
 
     // User-related endpoints
     @PostMapping("/auth/register")
