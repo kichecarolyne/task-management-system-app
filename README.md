@@ -1,6 +1,7 @@
 Task Management System
 
-A simple Task Management System that allows users to create, update, and delete tasks. The system requires user authentication before any task management actions. Each task contains a title, description, status (To Do, In Progress, Done), and a due date.
+A simple Task Management System that allows users to create, update, and delete tasks.
+
 
 Features
 
@@ -19,6 +20,26 @@ Update a Task: Modify task details such as title, description, status, or due da
 Delete a Task: Remove a task.
 
 Get Tasks: List all tasks for the logged-in user.
+
+
+Admin Role:
+
+Admins can create, read, update, and delete projects.
+
+Admins can assign tasks to users (linked to projects).
+
+Admins can view all projects and tasks created by them.
+
+Admins can view all users and delete their accounts.
+
+User Role:
+
+Users can view, edit, and delete their own tasks (tasks that they created and are not linked to any project).
+
+Users can view and update tasks assigned to them by Admin (tasks linked to projects).
+
+Users cannot create or delete projects or assign tasks to others.
+
 
 Tech Stack
 
@@ -72,7 +93,7 @@ Backend Setup
 
 Clone the repository:
 
-git clone https://github.com/kichecarolyne/task-management-system-app.git
+git clone https://github.com/username/task-management-system-app.git
 
 cd task-management-system
 
