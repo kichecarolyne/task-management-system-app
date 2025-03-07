@@ -3,13 +3,14 @@ Task Management System
 A simple Task Management System that allows users to create, update, and delete tasks.
 
 
-Features
+FEATURES
 
 User Authentication:
 
 Users can register and log in securely using JWT-based authentication.
 
-Task Management:
+
+TASK MANAGEMENT:
 
 Users can perform CRUD (Create, Read, Update, Delete) operations on tasks:
 
@@ -22,7 +23,7 @@ Delete a Task: Remove a task.
 Get Tasks: List all tasks for the logged-in user.
 
 
-Admin Role:
+ADMIN ROLE:
 
 Admins can create, read, update, and delete projects.
 
@@ -32,7 +33,8 @@ Admins can view all projects and tasks created by them.
 
 Admins can view all users and delete their accounts.
 
-User Role:
+
+USER ROLE:
 
 Users can view, edit, and delete their own tasks (tasks that they created and are not linked to any project).
 
@@ -41,9 +43,9 @@ Users can view and update tasks assigned to them by Admin (tasks linked to proje
 Users cannot create or delete projects or assign tasks to others.
 
 
-Tech Stack
+TECH STACK
 
-Backend
+BACKEND:
 
 Java Spring Boot
 
@@ -53,7 +55,7 @@ Spring Security
 
 Provides security features like JWT-based authentication.
 
-Hibernate/JPA
+JPA
 
 ORM framework for interacting with databases.
 
@@ -61,7 +63,7 @@ MySQL
 
 Relational database for storing user and task data.
 
-Maven or Gradle
+Maven
 
 Build tools for managing dependencies and project build lifecycle.
 
@@ -69,7 +71,8 @@ RESTful APIs
 
 RESTful API endpoints for task management operations.
 
-Frontend
+
+FRONTEND:
 
 React
 
@@ -83,11 +86,12 @@ Axios
 
 To make API calls from the frontend to the backend.
 
-Material UI
+Tailwind
 
 For styling the application.
 
-Setup & Installation
+
+SETUP & INSTALLATION:
 
 Backend Setup
 
@@ -99,7 +103,7 @@ cd task-management-system
 
 Configure your database connection in the application.properties or application.yml file for Spring Boot:
 
-spring.datasource.url=jdbc:postgresql://localhost:5432/taskdb
+spring.datasource.url=jdbc:mysql://localhost:3306/task_management
 
 spring.datasource.username=your-username
 
@@ -163,11 +167,13 @@ DELETE /api/tasks/{taskId}
 
 Delete a specific task by task ID.
 
-Authentication
+
+AUTHENTICATION:
 
 The backend uses JWT (JSON Web Tokens) for authentication. Upon successful login, a token is issued, which must be included in the Authorization header for subsequent API requests.
 
-Technologies Used
+
+TECHNOLOGIES USED:
 
 Spring Boot for backend development
 
@@ -177,4 +183,4 @@ React for building the frontend user interface
 
 MySQL for database management
 
-Material UI (optional) for UI 
+Tailwind for UI styling
